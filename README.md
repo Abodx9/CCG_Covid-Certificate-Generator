@@ -34,10 +34,14 @@ Now after enforcing the check of the Private key, these Certs. are not working a
 
 They can work in some countries that have not enforced the checking  yet.
 
+## How TO: 
+
+Here is a simple Test that I made before enforcing the checking
+![](https://github.com/Abodx9/CCG_Covid-Certificate-Generator/blob/main/How.png)
 
 
 
-## Testing 
+## Testing: 
 
 Here is a simple Test that I made before enforcing the checking
 ![](https://github.com/Abodx9/CCG_Covid-Certificate-Generator/blob/main/Test.gif)
