@@ -36,9 +36,11 @@ They can work in some countries that have not enforced the checking  yet.
 
 
 
+
 ## Testing 
 
 Here is a simple Test that I made before enforcing the checking
+![](https://github.com/Abodx9/CCG_Covid-Certificate-Generator/blob/main/Test.gif)
 
-https://github.com/Abodx9/CCG_Covid-Certificate-Generator/blob/main/test.mp4
+
 
