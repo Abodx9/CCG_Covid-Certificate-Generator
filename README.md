@@ -58,6 +58,8 @@ This photo explain all stages.
 ![](https://github.com/Abodx9/CCG_Covid-Certificate-Generator/blob/main/How.png)
 
 
+The process can be reverse in order to decode the QR Code.
+
 
 ## Testing: 
 
