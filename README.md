@@ -36,6 +36,7 @@ They can work in some countries that have not enforced the checking  yet.
 
 ## Stages
 
+
 **Raw Data:**  The certificate starts as raw data, which includes information such as the individual's name, date of birth, vaccination status, test results, and recovery status. This raw data is first collected and stored in a secure database.
 
 **JSON Format:**  The raw data is then converted to a structured format called JSON (JavaScript Object Notation), which is a lightweight data-interchange format that is easy for computers to read and write.
@@ -50,7 +51,10 @@ They can work in some countries that have not enforced the checking  yet.
 
 **Finally convert the data into QR CODE** 
 
+
+
 This photo explain all stages.
+
 ![](https://github.com/Abodx9/CCG_Covid-Certificate-Generator/blob/main/How.png)
 
 
