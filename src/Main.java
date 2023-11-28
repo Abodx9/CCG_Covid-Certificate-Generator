@@ -18,7 +18,7 @@ public class Main {
 
     public static void main(String[] args) throws CoseException, WriterException, DecoderException {
 
-        // the health information in json format you can modify it, to your own Data
+        // the health information are in json format you can modify them, to your own Data
         String json = "{\"v\":[{\"ci\":\"URN:UVCI:01:DE:187/37512422923\",\"co\":\"DE\",\"dn\":3,\"dt\":\"2021-11-24\",\"is\":\"Robert Koch-Institut\",\"ma\":\"ORG-100030215\",\"mp\":\"EU/1/20/1528\",\"sd\":3,\"tg\":\"840539006\",\"vp\":\"1119349007\"}],\"dob\":\"2000-05-12\",\"nam\":{\"fn\":\"Blabla\",\"gn\":\"Flafla\",\"fnt\":\"BLABLA\",\"gnt\":\"FLAFLA\"},\"ver\":\"1.0.0\"}";
 
         //using the system local time and convert them to Epoch , to work as issued and expiration infos.
@@ -28,7 +28,7 @@ public class Main {
 
         // Then we create a cbor object, that contains our health information as well as issued, expired time, issuer and version ...etc
         CBORObject map = CBORObject.NewMap();
-        map.set(CBORObject.FromObject(1), CBORObject.FromObject("DE")); // for France is CNAM
+        map.set(CBORObject.FromObject(1), CBORObject.FromObject("DE")); // for France is CNAM, if needed
         map.set(CBORObject.FromObject(6), CBORObject.FromObject(issued));
         map.set(CBORObject.FromObject(4), CBORObject.FromObject(expiration));
         CBORObject hcertVersion = CBORObject.NewMap();
