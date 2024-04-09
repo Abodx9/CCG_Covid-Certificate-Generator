@@ -36,7 +36,7 @@ public class Main {
         hcertVersion.set(CBORObject.FromObject(1), hcert);
         map.set(CBORObject.FromObject(-260), hcertVersion);
 
-        // here we are converting the whole data to encoded binary data .. cbor object -> Binary data
+        // converting the whole data to encoded binary data .. cbor object -> Binary data
         byte[] cbor = map.EncodeToBytes();
 
         // Generating a random private key, that satisfy the needs. If you have the private key u can use it , but impossible lol
@@ -50,7 +50,7 @@ public class Main {
        // byte[] kid = UUID.randomUUID().toString().getBytes(StandardCharsets.UTF_8);
 
 
-        // We are now signing the data with both keys, as we can see the most important is the Private key
+        // Now signing the data with both keys, as we can see the most important is the Private key
         Sign1Message msg = new Sign1Message();
         msg.addAttribute(HeaderKeys.Algorithm, privateKey.get(KeyKeys.Algorithm), Attribute.PROTECTED);
         msg.addAttribute(HeaderKeys.KID, CBORObject.FromObject(ki), Attribute.PROTECTED);
@@ -74,17 +74,17 @@ public class Main {
         byte[] zip = stream.toByteArray();
 
 
-        //After compressing the data, I noticed it was converted to base45, and I was lucky to find a java library that did the work
+        //After compressing the data, I noticed it was encoded in base45.
         //why base45 I do not know :)
         String vorlast = Base45.getEncoder().encodeToString(zip);
 
 
         //In this step we are adding HC1 to the base45 converted code from the previous stage
-        // I think HC means Health Certificate  version 1. lol
+        // I think HC means Health Certificate  version 1. (: lol
         String last = "HC1:" + vorlast;
 
 
-        //Lastly with the help of zxing library we are writing the final code to QR image and, and export it to the directory
+        //Lastly with the help of zxing library we are writing the final code to QR image, then export it.
         QRCodeWriter qrCodeWriter = new QRCodeWriter();
         int width = 300, height = 300;
         BitMatrix bitMatrix = null;

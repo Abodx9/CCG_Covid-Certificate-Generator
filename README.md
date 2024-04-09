@@ -56,7 +56,7 @@ They may still work in some countries that have not yet enforced the checking.
 
 - This photo explain all stages.
 
-![](https://github.com/Abodx9/CCG_Covid-Certificate-Generator/blob/main/How.png)
+![](https://github.com/Abodx9/CCG_Covid-Certificate-Generator/blob/main/Concept-Map.png)
 
 
 - The process can be reverse in order to decode the QR Code.
